@@ -3,24 +3,24 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 3.125rem;
   background-color: #121212;
   z-index: 100;
   width: 100%;
   top: 0;
-  padding: 0px 10px;
+  padding: 10px 10px;
   gap: 2rem;
 }
 
 .logo {
-  width: 120px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .navbar-links {
   display: flex;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 
 .nav-link {
@@ -58,7 +58,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4px;
   z-index: 102;
 }
 
@@ -96,6 +95,7 @@
 a:hover
 {
     background: linear-gradient(to right, #ff98e2, #ffc876, #79fff7);
+    background-clip:text ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -142,9 +142,10 @@ a:hover
 .btn-section
 {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
-  gap: 20px;
+  margin-right: 10px;
+  width: 250px;
 }
 
 /* Responsive Styles */
@@ -153,7 +154,4 @@ a:hover
     display: none; /* Hide navbar links on smaller screens */
   }
 
-  #nav-hamburger {
-    display: block; /* Show hamburger menu */
-  }
 }

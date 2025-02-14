@@ -40,22 +40,15 @@ export const Home = () => {
         </div>
       </div>
       <div className="crypto-data-section">
-        <div className="crypto-data-value-section">
-          <div className="crypto-data-value">
-            <div>
-              <p>$123456</p>
-              <p>USDT Raised</p>
-            </div>
-          </div>
-          <div className="crypto-data-value">
-            <div>
-              <p>10,387</p>
-              <p>Holders</p>
-            </div>
-          </div>
-          <div>
-
-          </div>
+        <div className="col-1">
+        <div>
+        <p>$123456</p>
+        <p>USDT Raised</p>
+        </div>
+        <div>
+        <p>10,387</p>
+        <p>Holders</p>
+        </div>
         </div>
         <div className="buyer-container">
           <div className="progress-container">
@@ -173,7 +166,7 @@ export const Home = () => {
             <div className="input-container">
             <div className="input-box-container">
             <input type="number" ></input>
-            <p>TICS</p>
+            <p>EDBK</p>
             <div className="icon-container">
             <img src={pepe} alt="eth-logo"></img>
             </div>
@@ -250,14 +243,39 @@ export const Home = () => {
           </a>
         </div>
         </div>
+        <div className="second-section">
+        <h1 className="gradient-text" id="how-to-buy">How To Buy</h1>
+        <p id="how-to-buy-para">Buying Tics with<br></br>ETH BNB</p>
+        <div className="second-section-box">
+        <div className="step-container">
+        <p id="step-label">Step-1 Wallet Setup</p>
+        <p id="step-welcome">Welcome aboard! Start by getting MetaMask on your desktop browser or a Wallet Connect-compatible wallet like Trust Wallet for your mobile.
+        <br></br>
+        Desktop users, MetaMask is ideal for a smooth purchase process. Mobile users, Trust Wallet or MetaMask connected through Wallet Connect is your go-to.</p>
+        <div className="wallet-btn">
+          <a>
+            Download
+            <img src={metamask}></img>
+          </a>
+          <a>
+            Download
+            <img src={trust}></img>
+          </a>
+        </div>
+        </div>
         <div className="step-container">
         <p id="step-label">Step-2 Sending Your Payment</p>
         <p id="step-welcome">
         Choose your desired currency and TICS token amount on our website and click 'Buy Now'. We'll generate a unique QR code and a wallet 
         address for you to send your payment. Once your transaction is blockchain-confirmed, your purchased TICS tokens will be allocated to 
         your wallet address, and your balance will reflect your purchase on your dashboard. Keep your transaction ID handy, just in case.
+        <br></br>
         </p>
-        <img src={paymentMap} alt="tics-payment-map" id="payment-map"></img>
+        <div className="tics-crypto-map">
+        <img src={paymentMap} alt="tics-map" id="tics-map"></img>
+        </div>
+        </div>
+        </div>
         </div>
         <div className="step-container">
         <p id="step-label">Step-3 Claiming Your Tokens</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import logo from '../assets/final_logo-B3ix3BYr.png';
+import logo from '../assets/EdubukLogoClean.png';
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,14 +13,9 @@ const NavBar = () => {
   const navData = [
     { name: 'Wallet', path: '/wallet' },
     { name: 'Banks & Institutions', path: '/bank' },
-    { name: 'QubeQode', path: '/qubeqode' },
     { name: 'Tokenomics', path: '/tokenomics' },
-    { name: 'Roadmap', path: '/roadmap' },
-    { name: 'Decentralized VPN', path: '/decen-vpn' },
     { name: 'Q&A', path: '/q&a' },
-    { name: 'Blogs', path: '/blogs' },
     { name: 'How To Buy', path: '/htob' },
-    { name: 'TICSScan', path: '/ticsscan' },
     { name: 'Whitepaper', path: '/whitepaper' },
   ];
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import companyLogo from '../../assets/final_logo-B3ix3BYr.png'
+import logo from '../../assets/EdubukLogoClean.png';
 import twitter from '../../assets/twitter.svg';
 import telegram from '../../assets/telegram.svg';
 import youtube from '../../assets/youtube.svg';
@@ -13,7 +13,7 @@ const Footer = () => {
     <div className='footer-bg'></div>
     <div className='footer-inner'>
     <div className='form-container'>
-    <p className="form-title">Sign up to Qubetics</p>
+    <p className="form-title">Sign up to Edubuk</p>
     <div className='form'>
       <input type="email" placeholder='Enter your email'></input>
       <button className='custom-btn'> Submit </button>
@@ -22,8 +22,8 @@ const Footer = () => {
     <div className='footer-info-container'>
       <div className='footer-info-section'>
         <div className='footer-company-info'>
-        <img src={companyLogo} style={{width:"150px"}}></img>
-        <p>Join the Qubetics crypto presale—the world's first Layer 1, Web3 aggregated ecosystem that unites leading blockchains like Bitcoin, Ethereum, and Solana. Our platform is designed for innovative applications set to revolutionize blockchain utilization.
+        <img src={logo} style={{width:"150px"}}></img>
+        <p>Join the Edubuk crypto presale—the world's first Layer 1, Web3 aggregated ecosystem that unites leading blockchains like Bitcoin, Ethereum, and Solana. Our platform is designed for innovative applications set to revolutionize blockchain utilization.
         <br></br>
         <br></br>
         Qubetics Labs LLC
@@ -32,7 +32,7 @@ Company No: FSC/200/LLC 2233/24
 <br></br>
 Registered Office: 301 Chetumal Street, Belize City, Belize
 <br></br>
-support@qubetics.com</p>
+support@edubuk.com</p>
         </div>
         <div className='footer-company-info-links' >
         <div className='footer-company-links'>
@@ -52,8 +52,8 @@ support@qubetics.com</p>
         <div className='links'>
           <a>Wallet</a>
           <a>Banks & Institutions</a>
-          <a>QUSD</a>
-          <a>QubeQode</a>
+          <a>EDBK</a>
+          <a>EduNode</a>
           <a>DVPN</a>
         </div>
         </div>
@@ -67,8 +67,6 @@ support@qubetics.com</p>
           <a>Contact</a>
         </div>
         </div>
-        </div>
-        <div>
         </div>
       </div>
       <div className='footer-social-section'>
@@ -94,7 +92,7 @@ support@qubetics.com</p>
     </div>
     </div> 
     <div className='footer-bottom-section'>
-          <p>©2024 Copyright Qubetics. All rights reserved</p> 
+          <p>©2025 Copyright Edubuk. All rights reserved</p> 
     </div> 
     </div> 
     </>

@@ -59,6 +59,7 @@
 {
     font-size: 3.75rem;
     background: linear-gradient(to right, #ff98e2, #ffc876, #79fff7);
+    background-clip:text ;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
 }
@@ -127,7 +128,9 @@
 .crypto-data-value-section
 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -173,22 +176,53 @@
 
 .buyer-container
 {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: auto;
     gap: 3rem;
     background-color: #ffffff12;
-    -webkit-backdrop-filter: blur(100px);
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    backdrop-filter: blur(100px);
     border:1px solid rgba(255,255,255,.1333333333);
-    width: 100%;
-    padding:60px 40px;
+    padding:20px 20px;
     margin-top: 10px;
     border-radius: 0.5rem;
+    width: 85%;
 }
 
+.col-1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding:0px 20px ;
+}
 
+.col-1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.col-1>div>:nth-child(1)
+{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-block: auto;
+    align-items: center;
+}
+.col-1>div>:nth-child(2)
+{
+    color: #909090;
+    font-size: .875rem;
+    line-height: 1.4em;
+    align-items: center;
+}
 
 
 .progress-container
@@ -197,11 +231,13 @@
     flex-direction: column;
     gap: 1.5rem;
     padding-bottom: 4.5rem;
+    width: 100%;
 }
 
 .text-cotainer
 {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5rem
@@ -396,7 +432,9 @@
     font-weight: 700;
     background-color: #181818;
     border-radius: 999rem;
+    min-width: 200px;
 }
+
 .dropdown-inner-section:hover
 {
     filter: brightness(90%);
@@ -524,6 +562,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-wrap: wrap; */
     gap: 1.5rem;
 }
 
@@ -535,9 +574,8 @@
     border-radius: 999rem;
     background-color: transparent;
     transition: background-color .2s ease-out,box-shadow .2s ease-out;
-    padding: 1px;
-    background-color: #2f2f2f;
-    height: 3.375rem;
+    /* border:2px solid #2f2f2f; */
+    
 }
 .input-container::after
 {
@@ -575,6 +613,7 @@
     background-color: #070707;
     border-radius: 999rem;
     height: 100%;
+    border: 2px solid #2f2f2f;
 }
 
 .input-box-container>input
@@ -602,6 +641,7 @@
 
 .icon-container
 {
+    
     width: 2rem;
     height: 2rem;
 }
@@ -675,7 +715,7 @@
     align-items: center;
     flex-direction: column;
     gap:2rem;
-    width: 100%;
+    width: 85%;
 }
 
 #how-to-buy
@@ -835,10 +875,22 @@
     font-size: 2.2rem;
     font-weight: 700;
 }
+.input-container
+{
+    width: 200px;
+    height: 2rem;
+}
 }
 
 
-
+@media screen and (max-width:950px)
+{
+    .input-container
+{
+    width: 200px;
+    height: 2.5rem;
+}
+}
 
 @media screen and (max-width:550px){
     .phase-box
@@ -866,6 +918,51 @@
 {
     font-size: 2rem;
     font-weight: 700;
+}
+.text-left,.text-right
+{
+    font-size: 0.8rem;
+}
+
+.step-container>p
+{
+    color: #909090;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.input-container
+{
+    width: 150px;
+    height: 1.8rem;
+}
+
+.icon-container>img
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.input-container-box{
+    gap: 0.8rem;
+}
+
+.wallet-btn
+{
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.wallet-btn>a
+{
+    padding: 4px 5px;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.wallet-btn>a>img{
+    width: 150px;
 }
 }
 
